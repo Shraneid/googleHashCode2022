@@ -1,9 +1,10 @@
 from pathlib import Path
-
-from parser import parse
+import parserInputFiles
 
 def optimize_projects():
-    file_path = "./"
+    file_path = "./a_an_example.in.txt"
+    with open(file_path) as f:
+        env = parserInputFiles.parse(f.readlines())
 
 
 if __name__ == '__main__':
