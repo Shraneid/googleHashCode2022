@@ -14,6 +14,8 @@ class Project:
         self.max_score = max_score
         self.current_score = max_score
 
+        self.completed = False
+
         self.skills_needed = []
         self.contributors = []
         
@@ -24,5 +26,6 @@ class Project:
 
     def assign_contributor(self, contributor):
         self.contributors.append(contributor)
-        if len(self.contributors) > self.nb_of_skills:
-            raise Exception("ta grand mere")
+
+        if len(self.contributors) == self.nb_of_skills:
+            self.completed = True
