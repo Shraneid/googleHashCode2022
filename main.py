@@ -4,7 +4,7 @@ import parserInputFiles
 def optimize_projects():
     file_path = "./a_an_example.in.txt"
     with open(file_path) as f:
-        env = parserInputFiles.parse(f.readlines())
+        contributors, projects = parserInputFiles.parse(f.readlines())
 
 
 if __name__ == '__main__':

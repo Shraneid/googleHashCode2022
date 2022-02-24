@@ -41,4 +41,4 @@ def parse(txt):
 
         projs.append(project)
 
-    a = 0
+    return conts, projs
